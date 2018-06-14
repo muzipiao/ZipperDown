@@ -33,7 +33,7 @@ iOS端修复很简单，下载文件成功后，解压文件时，不用**网络
 ## Demo演示
 
 1. 假设我们App使用了热修复，热修复文件放在沙盒的library/Caches/jspatch/hot.js(hot.js内容为 **jjjjjjjjjj**);
-2. 我们需要从这个链接<a>\(https://raw.githubusercontent.com/muzipiao/CommonResource/master/zip/hot.zip\)</a>下载一个包含图片的ZIP文件，下载解压的目标路径为library/Caches/zip/default;
+2. 我们需要从这个链接\(`https://raw.githubusercontent.com/muzipiao/CommonResource/master/zip/hot.zip`)下载一个包含图片的ZIP文件，下载解压的目标路径为library/Caches/zip/default;
 3. 黑客通过替换压缩包，将压缩包中内容替换为假的hot.js(hot.js内容为 **hack hack hack**)，并将压缩重命名为**../jspatch**；
 4. 我们下载解压后发现，JS热修复文件(library/Caches/jspatch/hot.js)内容变成了**hack hack hack**；
 5. 如果使用的是Http，可以通过**charles**代理抓包替换来达到模拟的目的，这里我们通过手动修改压缩包名称来模拟。
@@ -66,4 +66,4 @@ NSLog(@"解压缩失败");
 如果您觉得有所帮助，请在[ZipperDownDemo](https://github.com/muzipiao/ZipperDownDemo)上赏个Star ⭐️，您的鼓励是我前进的动力
 
 
-参考：<a>https://blog.csdn.net/yidunmarket/article/details/80359004</a>
+参考：`https://blog.csdn.net/yidunmarket/article/details/80359004`
